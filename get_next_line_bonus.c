@@ -83,7 +83,7 @@ char	*readline(int fd, char *storage)
 
 char	*get_next_line(int fd)
 {
-	static char	*storage[1024] = {0};
+	static char	*storage[8192] = {0};
 	char		*line;
 
 	if (fd < 0)
